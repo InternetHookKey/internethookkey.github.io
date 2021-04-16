@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 html {
     margin: 0;
+    min-height: 100%;
+    position: relative;
 }
 
 body {
     background: #eee;
     margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -59,11 +64,13 @@ h1 {
 #hm-container {
     display: flex;
     width: 25%;
-    height: 100%;
     position: absolute;
     left: -30%;
-    transition: left 500ms;
     top: 0;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+    transition: left 500ms;
     background: #222831;
     text-align: center;
     color: #eee;
@@ -144,6 +151,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 130px;
+    width: 100%;
 }
 
 .btn-sn {
