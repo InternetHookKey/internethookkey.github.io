@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 html {
     margin: 0;
 }
@@ -12,12 +13,27 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 2px 1px #000;
+}
+
+h1 {
+    color: #eee;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+}
+
+.disable-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .head-nav {
     margin: auto;
     height: 100px;
-    width: 50%;
+    width: 30%;
     text-align: center;
     display: flex;
     justify-content: flex-end;
@@ -28,9 +44,6 @@ header {
     margin-left: 2%;
     display: inline-block;
     vertical-align: middle;
-}
-
-.hmmenu {
     background: #393e46;
     width: 50px;
     height: 50px;
@@ -38,8 +51,50 @@ header {
     box-shadow: 2px 2px 2px #000;
 }
 
-.hmmenu:hover {
+#hm-btn:hover {
     cursor: pointer;
+}
+
+#hm-container {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: -30%;
+    transition: left 500ms;
+    top: 0;
+    background: #222831;
+    text-align: center;
+    color: #eee;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 3px 0px 4px #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hm-container.hide {
+    left: 0;
+}
+
+#hm-container>svg {
+    fill: #eee;
+    width: 200px;
+    height: 200px;
+    background: #393e46;
+    border-radius: 50%;
+}
+
+#hm-close {
+    border: 1px solid #eee;
+    border-style: dashed;
+    padding: 10px 30%;
+}
+
+#hm-close:hover {
+    cursor: pointer;
+    color: #222831;
+    background: #fff;
 }
 
 .head-nav-center {
@@ -76,4 +131,53 @@ header {
     color: #00adb5;
     border-color: #a7a7a7;
     background-color: #171c22;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: auto;
+    background: #393e46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+}
+
+.btn-sn {
+    width: 80px;
+    margin: 0px 15px 0px 15px;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background: #fff;
+    text-align: center;
+    width: 90%;
+    margin: 100px 0 100px 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content>p {
+    color: #585858;
+    font-size: 20px;
+}
+
+.content>img {
+    margin: 20px 0 20px 0;
+    width: 150px;
+    height: 150px;
 }
