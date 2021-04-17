@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+.post-banner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    color: #535353;
+    font-size: 150%;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    margin: 10px 0 0px 0;
+    height: 150px;
+    flex-direction: row;
+}
+
+.post-banner>img {
+    margin: 40px;
+}
+
+#tit-img {
+    width: 89px;
+    border: none;
+}
+
+.title-foka {
+    border-radius: 4px;
+    background: #222831;
+    color: #fff;
+    width: 70%;
+}
+
+.post-foka {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    color: #535353;
+    font-size: 150%;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    margin: 10px 0 0px 0;
+    height: 600px;
+    flex-direction: column;
+}
+
+.cont-foka {
+    width: 70%;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.img-foka {
+    margin-top: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.control-foka {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.control-foka>span>img {
+    width: 30px;
+    margin-top: 7px;
+}
+
+.arrow {
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.arrow-left {
+    filter: drop-shadow(-1px 1px 2px black);
+}
+
+.arr {
+    padding: 10px;
+    transition: 200ms;
+}
+
+.arr:hover {
+    cursor: pointer;
+    background: #393e46;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.arr:active {
+    background: #222831;
+    padding: 0px;
+    border-radius: 0;
+    filter: none;
+}
