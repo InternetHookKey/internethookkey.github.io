@@ -10,6 +10,7 @@ function closeMenu() {
 }
 
 window.onload = function() {
+    GetTotalFokas();
     document.getElementById("hm-close").onclick = function CloseHamburgerMenu() {
         closeMenu();
     }
@@ -35,5 +36,11 @@ document.onkeydown = function(evt) {
     if (isEscape) {
         x.classList.remove("hide");
 
+    }
+    if (evt.key == "ArrowLeft") {
+        Last();
+    }
+    if (evt.key == "ArrowRight") {
+        Next();
     }
 };

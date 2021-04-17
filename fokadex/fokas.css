@@ -50,6 +50,10 @@
     flex-direction: column;
 }
 
+.post-foka.hide {
+    display: none;
+}
+
 .cont-foka {
     width: 70%;
     font-family: 'Cutive Mono', monospace;
@@ -60,7 +64,9 @@
 .img-foka {
     margin-top: 30px;
     width: 200px;
+    height: 200px;
     border-radius: 5px;
+    box-shadow: 2px 2px 7px #000;
 }
 
 .control-foka {
@@ -100,4 +106,8 @@
     padding: 0px;
     border-radius: 0;
     filter: none;
+}
+
+.ref-foka {
+    color: #222831;
 }

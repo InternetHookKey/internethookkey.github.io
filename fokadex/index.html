@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="fokas.css">
     <!-- JS -->
+    <script src="control.js"></script>
     <script src="../menu.js"></script>
     <title>IHK | Blog</title>
 </head>
@@ -98,20 +99,41 @@
         <div id="post-margin" class="disable-select">
             <!-- PUBLICACIONES -->
             <div class="post-banner">
-                <h2>Seccion dedicada a la fokas del universo</h2>
+                <h2>Seccion dedicada a las fokas del universo</h2>
                 <img id="tit-img" src="orbita.svg">
             </div>
-            <div class="post-foka">
-                <div class="title-foka">
+            <!-- foka -->
+            <div class="post-foka" id="f0">
+
+                <div class="title-foka ">
                     Foka real
                 </div>
-                <div class="cont-foka">
-                    <img class="img-foka" src="img-fokas/real.jfif">
+                <div class="cont-foka ">
+                    <img class="img-foka " src="img-fokas/real.jfif ">
                     <p>Esta es la foka <b>original</b> por que fue la foka inicial aunque su reconocimiento es poco por ello su puesto es el mas bajo en el ranking de popularidad.</p>
                 </div>
-                <div class="control-foka title-foka">
-                    <span><img src="right-arrow.svg" class="arrow arr"></span>
-                    <span><img src="left-arrow.svg" class="arrow-left arr"></span>
+
+
+                <div class="control-foka title-foka ">
+                    <span><img src="right-arrow.svg " id="arrlef " class="arrow arr " onclick="Next()"></span>
+                    <span><img src="left-arrow.svg " id="arrrig " class="arrow-left arr " onclick="Last()" ></span>
+                </div>
+            </div>
+            <!-- foka -->
+            <div class="post-foka" id="f0">
+
+                <div class="title-foka ">
+                    Foka Pikachu
+                </div>
+                <div class="cont-foka ">
+                    <img class="img-foka " src="img-fokas/pik.jpeg ">
+                    <p>La Foka Pikachu es una de las fokas tiernas debido a que es descendiente directo de la <a href="/fokadex/?id" class="ref-foka">foka galaktik.</a></p>
+                </div>
+
+
+                <div class="control-foka title-foka ">
+                    <span><img src="right-arrow.svg " id="arrlef " class="arrow arr " onclick="Next()"></span>
+                    <span><img src="left-arrow.svg " id="arrrig " class="arrow-left arr " onclick="Last()" ></span>
                 </div>
             </div>
         </div>
@@ -120,9 +142,9 @@
 
     </main>
 
-    <footer class="disable-select">
-        <a href="mailto:vjlopezmz20@cobaep.edu.mx" target="_blank" class="btn-sn"><img src="../img/outlook.svg"></a>
-        <a href="/informacion/" class="btn-sn"><img src="../img/info.svg " width="80px"></a>
+    <footer class="disable-select ">
+        <a href="mailto:vjlopezmz20@cobaep.edu.mx " target="_blank " class="btn-sn "><img src="../img/outlook.svg "></a>
+        <a href="/informacion/ " class="btn-sn "><img src="../img/info.svg " width="80px "></a>
     </footer>
 
 
